@@ -1,15 +1,15 @@
-#Dicom Data Source for Apache Spark
+# Dicom Data Source for Apache Spark
 
 A library for reading the dicom images in the `spark SQL` data frame.
 
-##Linking 
+## Linking 
 
 This library is cross-published for `scala 2.11`.Also it was developed using java version `1.8.0_221`.The third party library
 `dcm-4che` source code was also used for developing the library.
  
 You can link against this library in your program at the following coordinates:
 
-####Using Maven:
+#### Using Maven:
 ```
 <dependency>
     <groupId>com.abzooba</groupId>
@@ -18,7 +18,7 @@ You can link against this library in your program at the following coordinates:
 </dependency>
 ```
 
-####With `spark-shell` or `spark-submit`
+#### With `spark-shell` or `spark-submit`
 
 This library can also be added to spark jobs launched through `spark-shell` or `spark-submit` by using the `--packages`
 command line option. For example,to include it when starting the spark shell:
@@ -27,7 +27,7 @@ command line option. For example,to include it when starting the spark shell:
 Unlike using `--jars`,using `--packages` ensures that this library and its dependencies will be added to the classpath.
 The `--packages` argument can also be used with `bin/spark-submit`.
 
-##Features
+## Features
 
 Dicom Data Source for Spark supports reading the dicom images in the `Spark SQL` data frame.It also returns the seperate 
 data frame containing the details regarding the corrupt files.
@@ -47,9 +47,9 @@ It contains two columns named `origin`,`exception`.
 1. `origin` contains the file path of the dicom file.
 2. `exception` conatins the message displaying the exception occured while reading the dicom file.
 
-##Code Snippets 
+## Code Snippets 
 
-####Scala API.
+#### Scala API.
 
 ```scala
 
