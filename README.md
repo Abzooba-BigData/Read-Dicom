@@ -81,7 +81,9 @@ val height = bimage.getHeight
 
 ImageIO.write(bimage,"jpg",new File("abc.jpg"))
 ```
+## Building from Source
 
+This library is built with Maven.To build a JAR file simply run `mvn package` command from the project root.
 
 
 
