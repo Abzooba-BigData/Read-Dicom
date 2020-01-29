@@ -2,12 +2,14 @@
 
 A library for reading the dicom images in the `spark SQL` data frame.
 
+
 ## Linking 
 
 This library is cross-published for `scala 2.11`.Also it was developed using java version `1.8.0_221`.The third party library
 `dcm-4che` source code was also used for developing the library.
  
 You can link against this library in your program at the following coordinates:
+
 
 #### Using Maven:
 ```
@@ -18,6 +20,7 @@ You can link against this library in your program at the following coordinates:
 </dependency>
 ```
 
+
 #### With `spark-shell` or `spark-submit`
 
 This library can also be added to spark jobs launched through `spark-shell` or `spark-submit` by using the `--packages`
@@ -26,6 +29,7 @@ command line option. For example,to include it when starting the spark shell:
     
 Unlike using `--jars`,using `--packages` ensures that this library and its dependencies will be added to the classpath.
 The `--packages` argument can also be used with `bin/spark-submit`.
+
 
 ## Features
 
@@ -47,7 +51,9 @@ It contains two columns named `origin`,`exception`.
 1. `origin` contains the file path of the dicom file.
 2. `exception` conatins the message displaying the exception occured while reading the dicom file.
 
+
 ## Code Snippets 
+
 
 #### Scala API.
 
@@ -81,6 +87,8 @@ val height = bimage.getHeight
 
 ImageIO.write(bimage,"jpg",new File("abc.jpg"))
 ```
+
+
 ## Building from Source
 
 This library is built with Maven.To build a JAR file simply run `mvn package` command from the project root.
